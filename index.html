@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <script src="myScript.js" type="text/javascript"></script>
+    <title>Mini-JavaScript Projects</title>
+</head>
+<body>
+<!-- make a new FORM for each mini-project-->
+<form name="project1">
+    <h3>Find the greater number!</h3>
+    <br><br>
+    Input Number 1: <input type="text" name="input1" value="type here...">
+    <br><br>
+    Input Number 2: <input type="text" name="input2" value="type here...">
+    <br><br>
+    Result: <input type="text" name="output" readonly="true" size="100">
+    <br><br>
+    <button type="button" onclick="document.project1.output.value=greaterNum(Number(document.project1.input1.value),Number(document.project1.input2.value))">CHECK IT</button>
+
+</form>
+
+<form name="project2">
+<h2>Type a language (EN,ES,DE,or FR) to translate!</h2>
+    <br><br>
+    Input Language: <input type="text" name="word" value="type here...">
+    <br><br>
+    Result: <input type="text" name="output" readonly="true">
+    <br><br>
+    <button type="button" onclick="document.project2.output.value=helloWorld(document.project2.word.value)">TRANSLATE</button>
+
+
+</form>
+<br><br>
+
+<form name="project3">
+
+    <h3>Presto Change-o Grade Converter MAGIC!  (wow)</h3>
+    <br><br>
+    Enter a numeric score to convert: <input type="text" name="input" value="type here..."
+    <br><br>
+    The resulting letter grade is: <input type="text" name="output" readonly="true">
+    <br><br>
+    <button type="button" onclick="document.project3.output.value=assignGrade(Number(document.project3.input.value))">GO</button>
+</form>
+
+
+</body>
+</html>
